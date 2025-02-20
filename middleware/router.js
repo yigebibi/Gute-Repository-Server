@@ -6,7 +6,7 @@ const errorHandler = (err, req, res, next) => {
 }
 router.use((req, res, next) => {
     console.log('Time:', Date.now())
-    console.log(req.data)
-    next(res.send(JSON.stringify(req)))
+    // console.log(req.data)
+    next()
 })
 export default router
